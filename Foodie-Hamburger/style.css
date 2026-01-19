@@ -6,13 +6,16 @@ body {
   margin: 0;
   background-color: #f6f0eb;
   font-family: 'Poppins', sans-serif;
+  /* overflow-x:hidden; */
+
+}
+.main-content{
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+
 }
 
-html {
-  /* overflow-x: hidden;
-  height: 100vh; */
-  scroll-behavior: smooth;
-}
 
 a {
   text-decoration-line: none;
@@ -58,6 +61,7 @@ img {
 
 main {
   padding: 0 24px;
+
 }
 
 .hero-section {
@@ -120,28 +124,27 @@ main {
  .hamburger-menu-container {
    overflow: hidden; 
   position: relative;
-   width:100px;
-  height:100px; 
+   width:40px;
+  height:40px; 
   display: none;
 } 
 
  .hamburger-menu {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-  
-  align-items: flex-end;
-  border-radius: 50%; 
-   position: absolute; 
-  top:-113px;
-  right: -111px;
-  cursor: pointer;
+   height: 100px;
+    width: 100px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: -64px;
+    right: -58px;
+    cursor: pointer;
+    margin-top: 7px;
 } 
  .hamburger-icon {
-  font-size: 30px;
+  font-size: 16px;
    position: absolute;
-  bottom: 32px;
-  left: 40px; 
+  bottom: 10px;
+  left: 20px; 
 } 
 
 @media (max-width: 1200px) {
@@ -190,10 +193,10 @@ main {
     backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
-    /* padding: 8px 24px; */
+     padding: 8px 24px; 
   }
   .header-content{
-  min-height:100px ;
+  min-height:40px ;
 
   }
 
@@ -201,11 +204,12 @@ main {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     flex-direction: column;
-    right: 24px;
-    top: 24px;
+    right: -200px;
+    top: 16px;
     padding: 24px;
+    transition:right 0.25s ease-in-out;
     /* backdrop-filter: blur(8px); */
-     display: none; 
+     /* display: none;  */
   }
   nav a+a {
     margin: 0;
@@ -216,8 +220,21 @@ main {
           display: block;
       }
   .menu-open nav{
- display: flex; 
+ /* display: flex;  */
+ right: 24px;
 }
  .menu-open .hamburger-menu-container {
   display: none;  
-}}
+}
+.go-to-top {
+        font-size: 14px;
+    }
+    .footer-text {
+        font-size: 12px;
+        margin-top: 32px;
+    }
+
+    .logo {
+        width: 30px;
+    }
+  }
