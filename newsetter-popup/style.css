@@ -39,3 +39,12 @@ font-size: 40px;
 .close-icon p{
     font-size: 18px;
 }
+.overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.pop-up.open.overlay{
+    display: block;
+}
