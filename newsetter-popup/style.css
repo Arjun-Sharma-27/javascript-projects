@@ -4,7 +4,7 @@ margin: 0;
 font-family: Inika;
 font-size: 40px;
 }
-.pop-up{
+.popup{
     width: 690px;
     height: 346px;
     /* display: flex; */
@@ -21,7 +21,7 @@ font-size: 40px;
     top:0;
     left:0;
 }
-.pop-up.open{
+.popup-open .popup{
     transform: scale(1);
     left:50%;
     top: 50%;
@@ -45,6 +45,6 @@ font-size: 40px;
     background-color: rgba(0,0,0,0.5);
     display: none;
 }
-.pop-up.open.overlay{
+.popup-open .overlay{
     display: block;
 }
