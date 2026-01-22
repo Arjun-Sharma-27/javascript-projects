@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     background-color: #DECDAC;
-    /* font-family: cursive; */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -74,8 +73,15 @@ h2,
 p {
     font-family: inika;
     font-weight: 400;
+    
 }
 
+h2{
+    font-size: 28px;
+}
+p{
+    font-size: 18px;
+}
 .sec2 {
     padding-top: 33px;
     padding-left: 34px;
@@ -88,7 +94,7 @@ p {
     right: 16px;
     cursor: pointer;
     font-family: serif;
-    /* margin-left: 250;     */
+    
 }
 
 .overlay {
@@ -98,7 +104,7 @@ p {
     inset: 0;
 }
 
-.vanish-button .overlay {
+.remove-button .overlay {
     display: block;
 }
 
