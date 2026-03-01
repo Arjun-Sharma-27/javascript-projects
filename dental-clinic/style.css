@@ -63,3 +63,96 @@ nav a {
     text-decoration: none;
 }
 
+
+
+/* Services */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-container {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Appointment */
+.appointment {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0d6efd;
+    color: white;
+}
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #0d6efd;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
