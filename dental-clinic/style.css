@@ -122,16 +122,35 @@ nav a:hover::after {
 
 .card {
     background: white;
-    padding: 25px;
     border-radius: 15px;
+    overflow: hidden;
     transition: 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 15px 5px;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    font-size: 14px;
+    color: #555;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
 
 /* Appointment */
 .appointment {
