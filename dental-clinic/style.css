@@ -84,7 +84,15 @@ nav a:hover::after {
     color: white;
     overflow: hidden;
 }
-
+/* Background Image */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    z-index: -2;
+    animation: zoomBg 10s ease-in-out infinite alternate;
+}
 
 .hero h1 {
     font-size: clamp(24px, 5vw, 42px);
