@@ -78,10 +78,13 @@ nav a:hover::after {
 
 /* Hero */
 .hero {
-    padding: 80px 20px;
+    position: relative;
+    padding: 100px 20px;
     text-align: center;
-    background: linear-gradient(to right, #eaf4ff, #d6e9ff);
+    color: white;
+    overflow: hidden;
 }
+
 
 .hero h1 {
     font-size: clamp(24px, 5vw, 42px);
